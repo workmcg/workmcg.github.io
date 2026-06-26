@@ -177,6 +177,17 @@
   .cert small{color:var(--dim);font-family:"JetBrains Mono",monospace;font-size:.74rem}
   .pursue{margin-top:.9rem;font-family:"JetBrains Mono",monospace;font-size:.76rem;color:var(--amber);background:var(--amber-soft);border:1px dashed rgba(232,180,92,.4);padding:.55em .8em;border-radius:7px}
 
+  .interests{margin-top:30px;border-top:1px solid var(--border-soft);padding-top:22px}
+  .interests .ih{font-family:"JetBrains Mono",monospace;font-size:.74rem;color:var(--muted);margin-bottom:.9rem}
+  .interests .ih::before{content:"$ ";color:var(--green)}
+  .interests .ih .cmd{color:var(--text)}
+  .int-row{display:flex;flex-wrap:wrap;gap:10px}
+  .intg{display:flex;align-items:center;gap:.55em;font-family:"JetBrains Mono",monospace;font-size:.82rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);padding:.45em .85em;border-radius:8px}
+  .intg .ico{font-size:1em;line-height:1}
+  .intg b{color:var(--cyan);font-weight:500}
+  .intg .culer{color:#A50044;font-weight:600}
+  .intg .culer2{color:#004D98;font-weight:600}
+
   /* contact */
   footer{padding:70px 0 40px;border-top:1px solid var(--border-soft)}
   .fterm{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;max-width:680px;margin:0 auto}
@@ -418,6 +429,14 @@
         <div class="pursue mono">[ ~ ] pursuing: ISO/IEC 27001 Lead Auditor</div>
       </div>
     </div>
+
+    <div class="interests reveal">
+      <div class="ih mono">cat <span class="cmd">~/.interests</span></div>
+      <div class="int-row">
+        <span class="intg"><span class="ico">🎵</span> Music</span>
+        <span class="intg"><span class="ico">⚽</span> Football — <span class="culer2">FC</span> <span class="culer">Barcelona</span> <b>culer</b></span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -465,13 +484,14 @@
 
   var responses = {
     help: '<span class="out"><span class="k">available</span>: '
-        + '<span class="s">journey</span> <span class="s">experience</span> <span class="s">crosswalk</span> <span class="s">build</span> <span class="s">stack</span> <span class="s">contact</span> <span class="s">clear</span><br>'
+        + '<span class="s">journey</span> <span class="s">experience</span> <span class="s">crosswalk</span> <span class="s">build</span> <span class="s">stack</span> <span class="s">interests</span> <span class="s">contact</span> <span class="s">clear</span><br>'
         + '<span class="dim">→ or just tap a chip below</span></span>',
     whoami: '<span class="out">Mukul Chauhan <span class="dim">::</span> cybersecurity <span class="k">GRC</span> + the technical ground truth underneath it. came up through <span class="f">forensics</span> &amp; <span class="f">DFIR</span>, now in <span class="k">governance &amp; risk</span>.</span>',
     stack: '<span class="out"><span class="k">grc</span>: ISO 27001 · NIST CSF · NIS2 · DORA · GDPR · COBIT<br><span class="k">security</span>: incident response · MITRE ATT&amp;CK · digital forensics<br><span class="k">build</span>: Python · Bash · Power Automate · M365</span>',
     experience: '<span class="out">scroll to <span class="k">journey</span> — my path rendered as a git log. <span class="dim">(opening…)</span></span>',
     sudo: '<span class="out"><span class="f">nice try</span> 😏 — this user is not in the sudoers file. but you can <span class="k">./contact</span> me instead.</span>',
-    ls: '<span class="out"><span class="k">journey/</span>  <span class="k">crosswalk/</span>  <span class="k">build/</span>  <span class="k">contact/</span>  <span class="dim">resume.pdf</span></span>'
+    interests: '<span class="out"><span class="k">music</span> 🎵 <span class="dim">·</span> <span class="k">football</span> ⚽ — <span class="f">FC Barcelona</span> culer through and through. <span class="dim">més que un club</span>.</span>',
+    ls: '<span class="out"><span class="k">journey/</span>  <span class="k">crosswalk/</span>  <span class="k">build/</span>  <span class="k">contact/</span>  <span class="dim">.interests</span></span>'
   };
   var scrollMap = { journey:'#journey', crosswalk:'#crosswalk', build:'#build', contact:'#contact', experience:'#journey' };
 
