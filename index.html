@@ -164,6 +164,7 @@
   .pcard p{font-size:.92rem;color:var(--muted);margin-bottom:.9rem}
   .pcard .pstack{display:flex;flex-wrap:wrap;gap:6px}
   .pstack span{font-family:"JetBrains Mono",monospace;font-size:.66rem;color:var(--dim);border:1px solid var(--border-soft);padding:.22em .5em;border-radius:5px}
+  .pcard-link{display:inline-block;margin-top:.8rem;font-family:"JetBrains Mono",monospace;font-size:.7rem;color:var(--cyan);text-decoration:none}
 
   .toolbox{display:grid;grid-template-columns:1fr 1fr;gap:24px}
   .tb h4{font-family:"JetBrains Mono",monospace;font-size:.74rem;color:var(--muted);margin-bottom:1rem;letter-spacing:.04em}
@@ -227,6 +228,7 @@
     <div class="nav-cmds mono" id="navc">
       <a href="#journey">journey</a>
       <a href="#crosswalk">crosswalk</a>
+      <a href="#toolkit">toolkit</a>
       <a href="#build">build</a>
       <a href="#contact">contact</a>
     </div>
@@ -382,6 +384,33 @@
       <div class="demo-foot mono">
         <span>29 controls · 3 frameworks · curated subset</span>
         <a href="https://github.com/workmcg/control-crosswalk" target="_blank" rel="noopener">view source on github ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-label mono">ls ./toolkit/</div>
+      <h2 class="sec-title">The GRC automation toolkit</h2>
+      <p class="sec-desc">control-crosswalk started it — these two extend the same idea: turn manual GRC work into something that runs itself.</p>
+    </div>
+
+    <div class="build-grid reveal">
+      <div class="pcard">
+        <div class="pk mono">// grc · genai</div>
+        <h3>grc-gap-ai</h3>
+        <p>AI-powered compliance gap analysis — paste a policy doc or upload a PDF, get a structured gap report mapped to ISO 27001, NIST CSF 2.0, NIS2, or DORA.</p>
+        <div class="pstack"><span>Streamlit</span><span>GPT-4o</span><span>Compliance</span></div>
+        <a class="pcard-link" href="https://github.com/workmcg/grc-gap-ai" target="_blank" rel="noopener">view source on github ↗</a>
+      </div>
+      <div class="pcard">
+        <div class="pk mono">// grc · incident response</div>
+        <h3>ir-playbook-gen</h3>
+        <p>AI-generated incident response playbooks — specify an incident type, sector, and framework, get containment steps, forensic checklists, RACI roles, and regulatory notification timelines in under 60 seconds.</p>
+        <div class="pstack"><span>Python</span><span>OpenAI</span><span>IR</span></div>
+        <a class="pcard-link" href="https://github.com/workmcg/ir-playbook-gen" target="_blank" rel="noopener">view source on github ↗</a>
       </div>
     </div>
   </div>
